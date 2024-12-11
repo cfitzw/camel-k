@@ -7466,9 +7466,11 @@ spec:
                           See https://kubernetes.io/docs/concepts/services-networking/ingress/
                         type: string
                       path:
-                        description: To configure the path exposed by the ingress
+                        description: To configure the paths exposed by the ingress
                           (default `/`).
-                        type: string
+                        items:
+                          type: string
+                        type: array
                       pathType:
                         description: |-
                           To configure the path type exposed by the ingress.
@@ -9461,9 +9463,11 @@ spec:
                           See https://kubernetes.io/docs/concepts/services-networking/ingress/
                         type: string
                       path:
-                        description: To configure the path exposed by the ingress
+                        description: To configure the paths exposed by the ingress
                           (default `/`).
-                        type: string
+                        items:
+                          type: string
+                        type: array
                       pathType:
                         description: |-
                           To configure the path type exposed by the ingress.
